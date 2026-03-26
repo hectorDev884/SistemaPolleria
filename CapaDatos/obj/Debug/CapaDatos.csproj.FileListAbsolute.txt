@@ -1,0 +1,9 @@
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaDatos\obj\Debug\CapaDatos.pdb
