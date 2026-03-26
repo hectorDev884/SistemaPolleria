@@ -1,0 +1,201 @@
+-- =============================================
+-- TABLA BASE
+-- =============================================
+
+CREATE TABLE Productos (
+    ProductoID      INT PRIMARY KEY IDENTITY(1,1),
+    CodigoProducto  VARCHAR(50)   NOT NULL,
+    Nombre          VARCHAR(100)  NOT NULL,
+    Existencia      INT           NOT NULL DEFAULT 0,
+    PrecioVenta     DECIMAL(10,2) NOT NULL,
+    Status          BIT           NOT NULL DEFAULT 1,
+    CategoriaID     INT           NOT NULL,
+    UnidadMedida    VARCHAR(50)   NOT NULL
+)
+GO
+
+-- /////////////////////////////////////////////
+-- //                                         //
+-- //           STORED PROCEDURES             //
+-- //                                         //
+-- /////////////////////////////////////////////
+
+
+-- =============================================
+-- SP #1 | OBTENER TODOS LOS PRODUCTOS
+-- =============================================
+
+CREATE PROCEDURE SP_Get_Productos
+AS
+BEGIN
+    BEGIN TRY
+        SELECT 
+            ProductoID,
+            CodigoProducto,
+            Nombre,
+            Existencia,
+            PrecioVenta,
+            Status,
+            CategoriaID,
+            UnidadMedida
+        FROM Productos
+    END TRY
+    BEGIN CATCH
+        SELECT 
+            ERROR_NUMBER()  AS ErrorNumero,
+            ERROR_MESSAGE() AS ErrorMensaje,
+            ERROR_LINE()    AS ErrorLinea
+    END CATCH
+END
+GO
+
+-- ---------------------------------------------
+
+-- =============================================
+-- SP #2 | OBTENER PRODUCTO POR CODIGO
+-- =============================================
+
+CREATE PROCEDURE SP_Get_Producto_ByCodigo
+    @CodigoProducto VARCHAR(50)
+AS
+BEGIN
+    BEGIN TRY
+        SELECT 
+            ProductoID,
+            CodigoProducto,
+            Nombre,
+            Existencia,
+            PrecioVenta,
+            Status,
+            CategoriaID,
+            UnidadMedida
+        FROM Productos
+        WHERE CodigoProducto = @CodigoProducto
+    END TRY
+    BEGIN CATCH
+        SELECT 
+            ERROR_NUMBER()  AS ErrorNumero,
+            ERROR_MESSAGE() AS ErrorMensaje,
+            ERROR_LINE()    AS ErrorLinea
+    END CATCH
+END
+GO
+
+-- ---------------------------------------------
+
+-- =============================================
+-- SP #3 | INSERTAR PRODUCTO
+-- =============================================
+
+CREATE PROCEDURE SP_Insert_Producto
+    @CodigoProducto VARCHAR(50),
+    @Nombre         VARCHAR(100),
+    @Existencia     INT,
+    @PrecioVenta    DECIMAL(10,2),
+    @Status         BIT,
+    @CategoriaID    INT,
+    @UnidadMedida   VARCHAR(50)
+AS
+BEGIN
+    BEGIN TRY
+        BEGIN TRANSACTION
+
+            INSERT INTO Productos 
+                (CodigoProducto, Nombre, Existencia, PrecioVenta, Status, CategoriaID, UnidadMedida)
+            VALUES 
+                (@CodigoProducto, @Nombre, @Existencia, @PrecioVenta, @Status, @CategoriaID, @UnidadMedida)
+
+            SELECT SCOPE_IDENTITY()
+
+        COMMIT TRANSACTION
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION
+        SELECT 
+            ERROR_NUMBER()  AS ErrorNumero,
+            ERROR_MESSAGE() AS ErrorMensaje,
+            ERROR_LINE()    AS ErrorLinea
+    END CATCH
+END
+GO
+
+-- ---------------------------------------------
+
+-- =============================================
+-- SP #4 | ACTUALIZAR PRODUCTO
+-- =============================================
+
+CREATE PROCEDURE SP_Update_Producto
+    @ProductoID     INT,
+    @CodigoProducto VARCHAR(50),
+    @Nombre         VARCHAR(100),
+    @Existencia     INT,
+    @PrecioVenta    DECIMAL(10,2),
+    @Status         BIT,
+    @CategoriaID    INT,
+    @UnidadMedida   VARCHAR(50)
+AS
+BEGIN
+    BEGIN TRY
+        BEGIN TRANSACTION
+
+            UPDATE Productos
+            SET
+                CodigoProducto = @CodigoProducto,
+                Nombre         = @Nombre,
+                Existencia     = @Existencia,
+                PrecioVenta    = @PrecioVenta,
+                Status         = @Status,
+                CategoriaID    = @CategoriaID,
+                UnidadMedida   = @UnidadMedida
+            WHERE ProductoID = @ProductoID
+
+            IF @@ROWCOUNT = 0
+                RAISERROR('No se encontro el producto con el ID proporcionado.', 16, 1)
+
+        COMMIT TRANSACTION
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION
+        SELECT 
+            ERROR_NUMBER()  AS ErrorNumero,
+            ERROR_MESSAGE() AS ErrorMensaje,
+            ERROR_LINE()    AS ErrorLinea
+    END CATCH
+END
+GO
+
+-- ---------------------------------------------
+
+-- =============================================
+-- SP #5 | ELIMINAR PRODUCTO
+-- =============================================
+
+CREATE PROCEDURE SP_Delete_Producto
+    @ProductoID INT
+AS
+BEGIN
+    BEGIN TRY
+        BEGIN TRANSACTION
+
+            IF NOT EXISTS (SELECT 1 FROM Productos WHERE ProductoID = @ProductoID)
+                RAISERROR('No se encontro el producto con el ID proporcionado.', 16, 1)
+
+            DELETE FROM Productos
+            WHERE ProductoID = @ProductoID
+
+        COMMIT TRANSACTION
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION
+        SELECT 
+            ERROR_NUMBER()  AS ErrorNumero,
+            ERROR_MESSAGE() AS ErrorMensaje,
+            ERROR_LINE()    AS ErrorLinea
+    END CATCH
+END
+GO
+
+-- =============================================
+-- FIN DEL SCRIPT
+-- =============================================
