@@ -53,5 +53,46 @@ namespace CapaDatos
             }
             return ds;
         }
+
+        public DataSet GetComprasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                connection = objConexion.Conectar();
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("sp_GetComprasPorFecha", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@FechaInicio", fechaInicio.Date);
+                cmd.Parameters.AddWithValue("@FechaFin", fechaFin.Date);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds, "GetComprasPorFecha");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return ds;
+        }
+
+        public DataSet GetComprasPorProveedor(int proveedorID)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                connection = objConexion.Conectar();
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("sp_GetComprasPorProveedor", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProveedorID", proveedorID);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds, "GetComprasPorProveedor");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return ds;
+        }
     }
 }

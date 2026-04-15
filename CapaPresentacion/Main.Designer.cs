@@ -34,6 +34,7 @@
             this.cmdCategorias = new System.Windows.Forms.Button();
             this.cmdVentas = new System.Windows.Forms.Button();
             this.cmdCompras = new System.Windows.Forms.Button();
+            this.cmdLavarPollo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmdClientes
@@ -102,11 +103,23 @@
             this.cmdCompras.UseVisualStyleBackColor = true;
             this.cmdCompras.Click += new System.EventHandler(this.cmdCompras_Click);
             // 
+            // cmdLavarPollo
+            // 
+            this.cmdLavarPollo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLavarPollo.Location = new System.Drawing.Point(487, 275);
+            this.cmdLavarPollo.Name = "cmdLavarPollo";
+            this.cmdLavarPollo.Size = new System.Drawing.Size(148, 82);
+            this.cmdLavarPollo.TabIndex = 9;
+            this.cmdLavarPollo.Text = "Lavar Pollo";
+            this.cmdLavarPollo.UseVisualStyleBackColor = true;
+            this.cmdLavarPollo.Click += new System.EventHandler(this.cmdLavarPollo_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmdLavarPollo);
             this.Controls.Add(this.cmdCompras);
             this.Controls.Add(this.cmdVentas);
             this.Controls.Add(this.cmdCategorias);
@@ -128,6 +141,7 @@
         private System.Windows.Forms.Button cmdCategorias;
         private System.Windows.Forms.Button cmdVentas;
         private System.Windows.Forms.Button cmdCompras;
+        private System.Windows.Forms.Button cmdLavarPollo;
     }
 }
 

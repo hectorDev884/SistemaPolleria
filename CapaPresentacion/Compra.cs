@@ -281,5 +281,11 @@ namespace CapaPresentacion
 
             txtIdProveedor.Text = cboProveedor.SelectedValue.ToString();
         }
+
+        private void cmdBuscar_Click(object sender, EventArgs e)
+        {
+            ConsultasCompras consultasCompras = new ConsultasCompras();
+            consultasCompras.ShowDialog();
+        }
     }
 }

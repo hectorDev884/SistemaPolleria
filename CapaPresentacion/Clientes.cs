@@ -274,6 +274,12 @@ namespace CapaPresentacion
                 MessageBox.Show("Error al actualizar: " + ex.Message);
             }
         }
+
+        private void cmdConsultas_Click(object sender, EventArgs e)
+        {
+            ConsultaClientes consultaClientes = new ConsultaClientes();
+            consultaClientes.ShowDialog();
+        }
     }
 
 

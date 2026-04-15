@@ -123,5 +123,32 @@ namespace CapaDatos
 
             connection.Close();
         }
+
+        public DataSet ObtenerProveedoresPorFecha(DateTime fechaRegistro)
+        {
+            DataSet data = new DataSet();
+            connection = objConexion.Conectar();
+            connection.Open();
+            adapter = new SqlDataAdapter("SP_Proveedores_GetByFecha", connection);
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adapter.SelectCommand.Parameters.AddWithValue("@FechaRegistro", fechaRegistro.Date);
+            adapter.Fill(data, "GetProveedoresByFecha");
+            adapter.Dispose();
+            connection.Close();
+            return data;
+        }
+
+        public DataSet ObtenerProveedoresActivos()
+        {
+            DataSet data = new DataSet();
+            connection = objConexion.Conectar();
+            connection.Open();
+            adapter = new SqlDataAdapter("SP_Proveedores_GetActivos", connection);
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adapter.Fill(data, "GetProveedoresActivos");
+            adapter.Dispose();
+            connection.Close();
+            return data;
+        }
     }
 }

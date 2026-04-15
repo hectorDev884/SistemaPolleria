@@ -44,5 +44,15 @@ namespace CapaNegocio
         {
             _clientesCRUD.EliminarCliente(id);
         }
+
+        public DataSet ObtenerClientesPorFecha(DateTime fechaRegistro)
+        {
+            return _clientesCRUD.ObtenerClientesPorFecha(fechaRegistro);
+        }
+
+        public DataSet ObtenerClientesActivos()
+        {
+            return _clientesCRUD.ObtenerClientesActivos();
+        }
     }
 }

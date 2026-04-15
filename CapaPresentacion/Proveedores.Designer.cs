@@ -47,6 +47,7 @@
             this.cmdBuscar = new System.Windows.Forms.Button();
             this.cmdGuardar = new System.Windows.Forms.Button();
             this.cmdPermitirEdicion = new System.Windows.Forms.Button();
+            this.cmdConsultas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -258,11 +259,23 @@
             this.cmdPermitirEdicion.Visible = false;
             this.cmdPermitirEdicion.Click += new System.EventHandler(this.cmdPermitirEdicion_Click);
             // 
+            // cmdConsultas
+            // 
+            this.cmdConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConsultas.Location = new System.Drawing.Point(1149, 746);
+            this.cmdConsultas.Name = "cmdConsultas";
+            this.cmdConsultas.Size = new System.Drawing.Size(213, 42);
+            this.cmdConsultas.TabIndex = 94;
+            this.cmdConsultas.Text = "Consultas";
+            this.cmdConsultas.UseVisualStyleBackColor = true;
+            this.cmdConsultas.Click += new System.EventHandler(this.cmdConsultas_Click);
+            // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1425, 793);
+            this.Controls.Add(this.cmdConsultas);
             this.Controls.Add(this.cmdPermitirEdicion);
             this.Controls.Add(this.cmdGuardar);
             this.Controls.Add(this.cmdBuscar);
@@ -313,5 +326,6 @@
         private System.Windows.Forms.Button cmdBuscar;
         private System.Windows.Forms.Button cmdGuardar;
         private System.Windows.Forms.Button cmdPermitirEdicion;
+        private System.Windows.Forms.Button cmdConsultas;
     }
 }

@@ -46,6 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.cmdEditar = new System.Windows.Forms.Button();
+            this.cmdConsultas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,11 +244,23 @@
             this.cmdEditar.Visible = false;
             this.cmdEditar.Click += new System.EventHandler(this.cmdEditar_Click);
             // 
+            // cmdConsultas
+            // 
+            this.cmdConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConsultas.Location = new System.Drawing.Point(1140, 722);
+            this.cmdConsultas.Name = "cmdConsultas";
+            this.cmdConsultas.Size = new System.Drawing.Size(213, 42);
+            this.cmdConsultas.TabIndex = 47;
+            this.cmdConsultas.Text = "Consultas";
+            this.cmdConsultas.UseVisualStyleBackColor = true;
+            this.cmdConsultas.Click += new System.EventHandler(this.cmdConsultas_Click);
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1392, 780);
+            this.Controls.Add(this.cmdConsultas);
             this.Controls.Add(this.cmdEditar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtIdCliente);
@@ -296,5 +309,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtIdCliente;
         private System.Windows.Forms.Button cmdEditar;
+        private System.Windows.Forms.Button cmdConsultas;
     }
 }

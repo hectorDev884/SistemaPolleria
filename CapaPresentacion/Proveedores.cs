@@ -257,5 +257,11 @@ namespace CapaPresentacion
             cmdPermitirEdicion.Enabled = false;
             cmdPermitirEdicion.Visible = false;
         }
+
+        private void cmdConsultas_Click(object sender, EventArgs e)
+        {
+            ConsultaProveedores consulta = new ConsultaProveedores();
+            consulta.ShowDialog();
+        }
     }
 }

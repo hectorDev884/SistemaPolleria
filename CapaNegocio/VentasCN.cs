@@ -57,5 +57,21 @@ namespace CapaNegocio
             DataSet ds = _ventasCRUD.GetUltimaVentaID();
             return Convert.ToInt32(ds.Tables["GetUltimaVentaID"].Rows[0]["SiguienteVentaID"]);
         }
+
+        public DataTable GetVentasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            return _ventasCRUD.GetVentasPorFecha(fechaInicio, fechaFin)
+                              .Tables["GetVentasPorFecha"];
+        }
+
+        public DataSet ObtenerVentasPorCliente(int clienteID)
+        {
+            return _ventasCRUD.GetVentasPorCliente(clienteID);
+        }
+
+        public DataSet ObtenerTopProductosVendidos(int top)
+        {
+            return _ventasCRUD.GetTopProductosVendidos(top);
+        }
     }
 }

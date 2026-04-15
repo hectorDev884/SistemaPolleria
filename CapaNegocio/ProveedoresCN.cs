@@ -53,5 +53,15 @@ namespace CapaNegocio
         {
             _proveedoresCRUD.EliminarProveedor(id);
         }
+
+        public DataSet ObtenerProveedoresPorFecha(DateTime fechaRegistro)
+        {
+            return _proveedoresCRUD.ObtenerProveedoresPorFecha(fechaRegistro);
+        }
+
+        public DataSet ObtenerProveedoresActivos()
+        {
+            return _proveedoresCRUD.ObtenerProveedoresActivos();
+        }
     }
 }

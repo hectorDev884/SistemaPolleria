@@ -26,5 +26,15 @@ namespace CapaNegocio
             DataSet ds = _comprasCRUD.GetUltimaCompraID();
             return Convert.ToInt32(ds.Tables["GetUltimaCompraID"].Rows[0]["SiguienteCompraID"]);
         }
+
+        public DataSet ObtenerComprasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            return _comprasCRUD.GetComprasPorFecha(fechaInicio, fechaFin);
+        }
+
+        public DataSet ObtenerComprasPorProveedor(int proveedorID)
+        {
+            return _comprasCRUD.GetComprasPorProveedor(proveedorID);
+        }
     }
 }

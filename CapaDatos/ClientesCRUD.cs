@@ -105,5 +105,32 @@ namespace CapaDatos
             command.ExecuteNonQuery();
             connection.Close();
         }
+
+        public DataSet ObtenerClientesPorFecha(DateTime fechaRegistro)
+        {
+            DataSet data = new DataSet();
+            connection = objConexion.Conectar();
+            connection.Open();
+            adapter = new SqlDataAdapter("SP_Clientes_GetByFecha", connection);
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adapter.SelectCommand.Parameters.AddWithValue("@FechaRegistro", fechaRegistro.Date);
+            adapter.Fill(data, "GetClientesByFecha");
+            adapter.Dispose();
+            connection.Close();
+            return data;
+        }
+
+        public DataSet ObtenerClientesActivos()
+        {
+            DataSet data = new DataSet();
+            connection = objConexion.Conectar();
+            connection.Open();
+            adapter = new SqlDataAdapter("SP_Clientes_GetActivos", connection);
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adapter.Fill(data, "GetClientesActivos");
+            adapter.Dispose();
+            connection.Close();
+            return data;
+        }
     }
 }

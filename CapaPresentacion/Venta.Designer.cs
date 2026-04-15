@@ -33,7 +33,7 @@
             this.cmdGuardar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmdEliminar = new System.Windows.Forms.Button();
-            this.cmdBuscar = new System.Windows.Forms.Button();
+            this.cmdConsultas = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ProductoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -138,16 +138,17 @@
             this.cmdEliminar.UseVisualStyleBackColor = false;
             this.cmdEliminar.Click += new System.EventHandler(this.cmdEliminar_Click);
             // 
-            // cmdBuscar
+            // cmdConsultas
             // 
-            this.cmdBuscar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.cmdBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdBuscar.Location = new System.Drawing.Point(180, 693);
-            this.cmdBuscar.Name = "cmdBuscar";
-            this.cmdBuscar.Size = new System.Drawing.Size(138, 78);
-            this.cmdBuscar.TabIndex = 96;
-            this.cmdBuscar.Text = "Buscar";
-            this.cmdBuscar.UseVisualStyleBackColor = false;
+            this.cmdConsultas.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConsultas.Location = new System.Drawing.Point(180, 693);
+            this.cmdConsultas.Name = "cmdConsultas";
+            this.cmdConsultas.Size = new System.Drawing.Size(138, 78);
+            this.cmdConsultas.TabIndex = 96;
+            this.cmdConsultas.Text = "Consultas";
+            this.cmdConsultas.UseVisualStyleBackColor = false;
+            this.cmdConsultas.Click += new System.EventHandler(this.cmdConsultas_Click);
             // 
             // dataGridView1
             // 
@@ -580,7 +581,7 @@
             this.Controls.Add(this.radioVenta);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cmdBuscar);
+            this.Controls.Add(this.cmdConsultas);
             this.Controls.Add(this.cmdEliminar);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdGuardar);
@@ -606,7 +607,7 @@
         private System.Windows.Forms.Button cmdGuardar;
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.Button cmdEliminar;
-        private System.Windows.Forms.Button cmdBuscar;
+        private System.Windows.Forms.Button cmdConsultas;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;

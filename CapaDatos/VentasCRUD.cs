@@ -133,5 +133,66 @@ namespace CapaDatos
             }
             return ds;
         }
+        public DataSet GetVentasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                connection = objConexion.Conectar();
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("sp_GetVentasPorFecha", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@FechaInicio", fechaInicio.Date);
+                cmd.Parameters.AddWithValue("@FechaFin", fechaFin.Date);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds, "GetVentasPorFecha");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return ds;
+        }
+
+        public DataSet GetVentasPorCliente(int clienteID)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                connection = objConexion.Conectar();
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("sp_GetVentasPorCliente", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ClienteID", clienteID);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds, "GetVentasPorCliente");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return ds;
+        }
+
+        public DataSet GetTopProductosVendidos(int top)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                connection = objConexion.Conectar();
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("sp_GetTopProductosVendidos", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Top", top);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds, "GetTopProductos");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return ds;
+        }
+
     }
 }

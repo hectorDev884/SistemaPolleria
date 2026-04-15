@@ -52,5 +52,11 @@ namespace CapaPresentacion
             Compra frm = new Compra();
             frm.ShowDialog();
         }
+
+        private void cmdLavarPollo_Click(object sender, EventArgs e)
+        {
+            LavarPollo lavarPollo = new LavarPollo();
+            lavarPollo.ShowDialog();
+        }
     }
 }

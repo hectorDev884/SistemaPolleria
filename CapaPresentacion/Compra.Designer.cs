@@ -491,8 +491,9 @@
             this.cmdBuscar.Name = "cmdBuscar";
             this.cmdBuscar.Size = new System.Drawing.Size(138, 78);
             this.cmdBuscar.TabIndex = 118;
-            this.cmdBuscar.Text = "Buscar";
+            this.cmdBuscar.Text = "Consulta";
             this.cmdBuscar.UseVisualStyleBackColor = false;
+            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
             // 
             // cmdEliminar
             // 

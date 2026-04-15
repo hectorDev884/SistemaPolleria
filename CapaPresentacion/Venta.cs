@@ -302,5 +302,11 @@ namespace CapaPresentacion
             txtSubtotal.Text = total.ToString("F2");
             txtTotal.Text = total.ToString("F2");
         }
+
+        private void cmdConsultas_Click(object sender, EventArgs e)
+        {
+            ConsultasVentas consultasVentas = new ConsultasVentas();
+            consultasVentas.ShowDialog();
+        }
     }
 }
