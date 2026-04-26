@@ -73,5 +73,11 @@ namespace CapaNegocio
         {
             return _ventasCRUD.GetTopProductosVendidos(top);
         }
+
+        public DataTable ObtenerVentasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            return _ventasCRUD.GetVentasPorFecha(fechaInicio, fechaFin)
+                              .Tables["GetVentasPorFecha"];
+        }
     }
 }

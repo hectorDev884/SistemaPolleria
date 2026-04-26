@@ -193,6 +193,32 @@ namespace CapaDatos
             }
             return ds;
         }
+        public DataTable GetReporteVentas()
+        {
+            DataTable tabla = new DataTable();
+
+            try
+            {
+                connection = objConexion.Conectar();
+                connection.Open();
+
+                SqlCommand cmd = new SqlCommand("sp_GetVentasPorFecha", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return tabla;
+        }
 
     }
 }

@@ -58,5 +58,12 @@ namespace CapaPresentacion
             LavarPollo lavarPollo = new LavarPollo();
             lavarPollo.ShowDialog();
         }
+
+        private void cmdReportes_Click(object sender, EventArgs e)
+        {
+
+            Reportes reportes = new Reportes();
+            reportes.ShowDialog();
+        }
     }
 }
