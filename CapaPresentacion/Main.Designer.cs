@@ -43,6 +43,7 @@
             this.sep1 = new System.Windows.Forms.Panel();
             this.sep2 = new System.Windows.Forms.Panel();
             this.cmdConsultas = new System.Windows.Forms.Button();
+            this.cmdBitacora = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCatalogos
@@ -182,9 +183,9 @@
             this.cmdReportes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(135)))), ((int)(((byte)(128)))));
             this.cmdReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdReportes.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdReportes.Location = new System.Drawing.Point(348, 298);
+            this.cmdReportes.Location = new System.Drawing.Point(240, 290);
             this.cmdReportes.Name = "cmdReportes";
-            this.cmdReportes.Size = new System.Drawing.Size(176, 64);
+            this.cmdReportes.Size = new System.Drawing.Size(200, 64);
             this.cmdReportes.TabIndex = 7;
             this.cmdReportes.Text = "Reportes";
             this.cmdReportes.UseVisualStyleBackColor = false;
@@ -220,12 +221,26 @@
             this.cmdConsultas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(135)))), ((int)(((byte)(128)))));
             this.cmdConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdConsultas.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdConsultas.Location = new System.Drawing.Point(160, 298);
+            this.cmdConsultas.Location = new System.Drawing.Point(52, 290);
             this.cmdConsultas.Name = "cmdConsultas";
             this.cmdConsultas.Size = new System.Drawing.Size(176, 64);
             this.cmdConsultas.TabIndex = 9;
             this.cmdConsultas.Text = "Consultas";
             this.cmdConsultas.UseVisualStyleBackColor = false;
+            // 
+            // cmdBitacora
+            // 
+            this.cmdBitacora.BackColor = System.Drawing.Color.White;
+            this.cmdBitacora.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(135)))), ((int)(((byte)(128)))));
+            this.cmdBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBitacora.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmdBitacora.Location = new System.Drawing.Point(452, 290);
+            this.cmdBitacora.Name = "cmdBitacora";
+            this.cmdBitacora.Size = new System.Drawing.Size(240, 64);
+            this.cmdBitacora.TabIndex = 10;
+            this.cmdBitacora.Text = "Bitacora Errores";
+            this.cmdBitacora.UseVisualStyleBackColor = false;
+            this.cmdBitacora.Click += new System.EventHandler(this.cmdBitacora_Click);
             // 
             // Main
             // 
@@ -233,6 +248,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(720, 460);
+            this.Controls.Add(this.cmdBitacora);
             this.Controls.Add(this.cmdConsultas);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.lblCatalogos);
@@ -277,6 +293,7 @@
         private System.Windows.Forms.Panel sep1;
         private System.Windows.Forms.Panel sep2;
         private System.Windows.Forms.Button cmdConsultas;
+        private System.Windows.Forms.Button cmdBitacora;
     }
 }
 

@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraCN.cs" />
     <Compile Include="CategoriaCN.cs" />
     <Compile Include="ClientesCN.cs" />
     <Compile Include="ProductoLavadoCN.cs" />

@@ -107,3 +107,4 @@ C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\C
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\Reportes\ReporteVentasPorCliente.rdlc
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\Reportes\ReporteProductosGeneral.rdlc
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\Reportes\ReporteProveedoresGeneral.rdlc
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\obj\Debug\CapaPresentacion.Bitacora.resources

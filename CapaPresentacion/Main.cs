@@ -65,5 +65,11 @@ namespace CapaPresentacion
             Reportes reportes = new Reportes();
             reportes.ShowDialog();
         }
+
+        private void cmdBitacora_Click(object sender, EventArgs e)
+        {
+            Bitacora bitacora = new Bitacora();
+            bitacora.ShowDialog();
+        }
     }
 }

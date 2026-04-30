@@ -74,6 +74,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora.Designer.cs">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <Compile Include="Venta.Designer.cs">
       <DependentUpon>Venta.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
     </EmbeddedResource>

@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraCRUD.cs" />
     <Compile Include="CategoriaCRUD.cs" />
     <Compile Include="ClientesCRUD.cs" />
     <Compile Include="Conexion.cs" />
