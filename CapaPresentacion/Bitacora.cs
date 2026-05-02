@@ -32,5 +32,11 @@ namespace CapaPresentacion
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            DataSet ds = _bitacoraCN.ObtenerErrors();
+            dataGridView1.DataSource = ds.Tables["sp_GetErrors"];
+        }
     }
 }

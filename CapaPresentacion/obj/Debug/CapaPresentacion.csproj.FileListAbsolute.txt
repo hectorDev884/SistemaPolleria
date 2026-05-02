@@ -25,7 +25,6 @@ C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\C
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\Microsoft.SqlServer.Server.pdb
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\Microsoft.SqlServer.Server.xml
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\CapaDatos.pdb
-C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\CapaDatos.dll.config
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaPresentacion\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll

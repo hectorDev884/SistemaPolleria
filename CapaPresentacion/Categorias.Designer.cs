@@ -1,16 +1,9 @@
-﻿namespace CapaPresentacion
+namespace CapaPresentacion
 {
     partial class Categorias
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,227 +15,364 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.txtDescripcion = new System.Windows.Forms.RichTextBox();
-            this.cmdEditar = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.lblSubtitulo = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.panelAccent = new System.Windows.Forms.Panel();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtIdCategoria = new System.Windows.Forms.TextBox();
-            this.cmdBuscar = new System.Windows.Forms.Button();
-            this.cmdEliminar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.cmdCancelar = new System.Windows.Forms.Button();
-            this.cmdGuardar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.RichTextBox();
             this.cmdNuevo = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmdGuardar = new System.Windows.Forms.Button();
+            this.cmdBuscar = new System.Windows.Forms.Button();
+            this.cmdCancelar = new System.Windows.Forms.Button();
+            this.cmdEliminar = new System.Windows.Forms.Button();
             this.cmdPermitirEdicion = new System.Windows.Forms.Button();
+            this.cmdEditar = new System.Windows.Forms.Button();
+            this.panelRight = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panelHeader.SuspendLayout();
+            this.panelLeft.SuspendLayout();
+            this.panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(136, 312);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(207, 96);
-            this.txtDescripcion.TabIndex = 86;
-            this.txtDescripcion.Text = "";
-            // 
-            // cmdEditar
-            // 
-            this.cmdEditar.BackColor = System.Drawing.Color.Khaki;
-            this.cmdEditar.Enabled = false;
-            this.cmdEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdEditar.Location = new System.Drawing.Point(163, 698);
-            this.cmdEditar.Name = "cmdEditar";
-            this.cmdEditar.Size = new System.Drawing.Size(193, 38);
-            this.cmdEditar.TabIndex = 85;
-            this.cmdEditar.Text = "Guardar Cambios";
-            this.cmdEditar.UseVisualStyleBackColor = false;
-            this.cmdEditar.Visible = false;
-            this.cmdEditar.Click += new System.EventHandler(this.cmdEditar_Click);
-            // 
+            //
+            // panelHeader
+            //
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.panelHeader.Controls.Add(this.lblSubtitulo);
+            this.panelHeader.Controls.Add(this.lblTitulo);
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1387, 90);
+            this.panelHeader.TabIndex = 200;
+            //
+            // lblTitulo
+            //
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(18, 10);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Categorías";
+            //
+            // lblSubtitulo
+            //
+            this.lblSubtitulo.AutoSize = true;
+            this.lblSubtitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
+            this.lblSubtitulo.Location = new System.Drawing.Point(21, 63);
+            this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.TabIndex = 1;
+            this.lblSubtitulo.Text = "Gestión del catálogo de categorías";
+            //
+            // panelAccent
+            //
+            this.panelAccent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.panelAccent.Location = new System.Drawing.Point(0, 90);
+            this.panelAccent.Name = "panelAccent";
+            this.panelAccent.Size = new System.Drawing.Size(1387, 5);
+            this.panelAccent.TabIndex = 201;
+            //
+            // panelLeft
+            //
+            this.panelLeft.BackColor = System.Drawing.Color.White;
+            this.panelLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLeft.Controls.Add(this.label5);
+            this.panelLeft.Controls.Add(this.label6);
+            this.panelLeft.Controls.Add(this.txtIdCategoria);
+            this.panelLeft.Controls.Add(this.label1);
+            this.panelLeft.Controls.Add(this.txtNombre);
+            this.panelLeft.Controls.Add(this.label2);
+            this.panelLeft.Controls.Add(this.txtDescripcion);
+            this.panelLeft.Controls.Add(this.cmdNuevo);
+            this.panelLeft.Controls.Add(this.cmdGuardar);
+            this.panelLeft.Controls.Add(this.cmdBuscar);
+            this.panelLeft.Controls.Add(this.cmdCancelar);
+            this.panelLeft.Controls.Add(this.cmdEliminar);
+            this.panelLeft.Controls.Add(this.cmdPermitirEdicion);
+            this.panelLeft.Controls.Add(this.cmdEditar);
+            this.panelLeft.Location = new System.Drawing.Point(10, 103);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(528, 645);
+            this.panelLeft.TabIndex = 202;
+            //
+            // label5
+            //
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.label5.Location = new System.Drawing.Point(15, 14);
+            this.label5.Name = "label5";
+            this.label5.TabIndex = 80;
+            this.label5.Text = "Categorias";
+            //
             // label6
-            // 
+            //
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 159);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
+            this.label6.Location = new System.Drawing.Point(15, 60);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 20);
             this.label6.TabIndex = 84;
             this.label6.Text = "CategoriaID:";
-            // 
+            //
             // txtIdCategoria
-            // 
+            //
             this.txtIdCategoria.Enabled = false;
-            this.txtIdCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCategoria.Location = new System.Drawing.Point(136, 156);
+            this.txtIdCategoria.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCategoria.Location = new System.Drawing.Point(150, 57);
             this.txtIdCategoria.Name = "txtIdCategoria";
             this.txtIdCategoria.ReadOnly = true;
-            this.txtIdCategoria.Size = new System.Drawing.Size(220, 27);
+            this.txtIdCategoria.Size = new System.Drawing.Size(195, 30);
             this.txtIdCategoria.TabIndex = 83;
-            // 
+            //
+            // label1
+            //
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
+            this.label1.Location = new System.Drawing.Point(15, 108);
+            this.label1.Name = "label1";
+            this.label1.TabIndex = 75;
+            this.label1.Text = "Nombre:";
+            //
+            // txtNombre
+            //
+            this.txtNombre.Enabled = false;
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(150, 105);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(195, 30);
+            this.txtNombre.TabIndex = 74;
+            //
+            // label2
+            //
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
+            this.label2.Location = new System.Drawing.Point(15, 158);
+            this.label2.Name = "label2";
+            this.label2.TabIndex = 76;
+            this.label2.Text = "Descripcion:";
+            //
+            // txtDescripcion
+            //
+            this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(150, 153);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(195, 80);
+            this.txtDescripcion.TabIndex = 86;
+            this.txtDescripcion.Text = "";
+            //
+            // cmdNuevo
+            //
+            this.cmdNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.cmdNuevo.FlatAppearance.BorderSize = 0;
+            this.cmdNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdNuevo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdNuevo.ForeColor = System.Drawing.Color.White;
+            this.cmdNuevo.Location = new System.Drawing.Point(365, 57);
+            this.cmdNuevo.Name = "cmdNuevo";
+            this.cmdNuevo.Size = new System.Drawing.Size(148, 40);
+            this.cmdNuevo.TabIndex = 71;
+            this.cmdNuevo.Text = "Nuevo";
+            this.cmdNuevo.UseVisualStyleBackColor = false;
+            this.cmdNuevo.Click += new System.EventHandler(this.cmdNuevo_Click);
+            //
+            // cmdGuardar
+            //
+            this.cmdGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.cmdGuardar.Enabled = false;
+            this.cmdGuardar.FlatAppearance.BorderSize = 0;
+            this.cmdGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdGuardar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdGuardar.ForeColor = System.Drawing.Color.White;
+            this.cmdGuardar.Location = new System.Drawing.Point(365, 107);
+            this.cmdGuardar.Name = "cmdGuardar";
+            this.cmdGuardar.Size = new System.Drawing.Size(148, 40);
+            this.cmdGuardar.TabIndex = 72;
+            this.cmdGuardar.Text = "Guardar";
+            this.cmdGuardar.UseVisualStyleBackColor = false;
+            this.cmdGuardar.Click += new System.EventHandler(this.cmdGuardar_Click);
+            //
             // cmdBuscar
-            // 
-            this.cmdBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdBuscar.Location = new System.Drawing.Point(362, 481);
+            //
+            this.cmdBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.cmdBuscar.FlatAppearance.BorderSize = 0;
+            this.cmdBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBuscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdBuscar.ForeColor = System.Drawing.Color.White;
+            this.cmdBuscar.Location = new System.Drawing.Point(365, 157);
             this.cmdBuscar.Name = "cmdBuscar";
-            this.cmdBuscar.Size = new System.Drawing.Size(138, 83);
+            this.cmdBuscar.Size = new System.Drawing.Size(148, 40);
             this.cmdBuscar.TabIndex = 82;
             this.cmdBuscar.Text = "Buscar";
-            this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.cmdBuscar.UseVisualStyleBackColor = false;
             this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
-            // 
+            //
+            // cmdCancelar
+            //
+            this.cmdCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
+            this.cmdCancelar.Enabled = false;
+            this.cmdCancelar.FlatAppearance.BorderSize = 0;
+            this.cmdCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancelar.ForeColor = System.Drawing.Color.White;
+            this.cmdCancelar.Location = new System.Drawing.Point(365, 207);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(148, 40);
+            this.cmdCancelar.TabIndex = 73;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = false;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
+            //
             // cmdEliminar
-            // 
-            this.cmdEliminar.BackColor = System.Drawing.Color.IndianRed;
+            //
+            this.cmdEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.cmdEliminar.Enabled = false;
-            this.cmdEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdEliminar.Location = new System.Drawing.Point(5, 653);
+            this.cmdEliminar.FlatAppearance.BorderSize = 0;
+            this.cmdEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdEliminar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdEliminar.ForeColor = System.Drawing.Color.White;
+            this.cmdEliminar.Location = new System.Drawing.Point(15, 558);
             this.cmdEliminar.Name = "cmdEliminar";
-            this.cmdEliminar.Size = new System.Drawing.Size(138, 83);
+            this.cmdEliminar.Size = new System.Drawing.Size(160, 40);
             this.cmdEliminar.TabIndex = 81;
             this.cmdEliminar.Text = "Eliminar categoria";
             this.cmdEliminar.UseVisualStyleBackColor = false;
             this.cmdEliminar.Visible = false;
             this.cmdEliminar.Click += new System.EventHandler(this.cmdEliminar_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(157, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 32);
-            this.label5.TabIndex = 80;
-            this.label5.Text = "Categorias";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 312);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
-            this.label2.TabIndex = 76;
-            this.label2.Text = "Descripcion:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 217);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
-            this.label1.TabIndex = 75;
-            this.label1.Text = "Nombre:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Enabled = false;
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(123, 214);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(220, 27);
-            this.txtNombre.TabIndex = 74;
-            // 
-            // cmdCancelar
-            // 
-            this.cmdCancelar.Enabled = false;
-            this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancelar.Location = new System.Drawing.Point(362, 637);
-            this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(138, 83);
-            this.cmdCancelar.TabIndex = 73;
-            this.cmdCancelar.Text = "Cancelar";
-            this.cmdCancelar.UseVisualStyleBackColor = true;
-            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
-            // 
-            // cmdGuardar
-            // 
-            this.cmdGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.cmdGuardar.Enabled = false;
-            this.cmdGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGuardar.Location = new System.Drawing.Point(362, 312);
-            this.cmdGuardar.Name = "cmdGuardar";
-            this.cmdGuardar.Size = new System.Drawing.Size(138, 83);
-            this.cmdGuardar.TabIndex = 72;
-            this.cmdGuardar.Text = "Guardar";
-            this.cmdGuardar.UseVisualStyleBackColor = false;
-            this.cmdGuardar.Click += new System.EventHandler(this.cmdGuardar_Click);
-            // 
-            // cmdNuevo
-            // 
-            this.cmdNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdNuevo.Location = new System.Drawing.Point(362, 126);
-            this.cmdNuevo.Name = "cmdNuevo";
-            this.cmdNuevo.Size = new System.Drawing.Size(138, 83);
-            this.cmdNuevo.TabIndex = 71;
-            this.cmdNuevo.Text = "Nuevo";
-            this.cmdNuevo.UseVisualStyleBackColor = true;
-            this.cmdNuevo.Click += new System.EventHandler(this.cmdNuevo_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(545, 31);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(801, 689);
-            this.dataGridView1.TabIndex = 70;
-            // 
+            //
             // cmdPermitirEdicion
-            // 
-            this.cmdPermitirEdicion.BackColor = System.Drawing.Color.Khaki;
+            //
+            this.cmdPermitirEdicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
             this.cmdPermitirEdicion.Enabled = false;
-            this.cmdPermitirEdicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdPermitirEdicion.Location = new System.Drawing.Point(163, 654);
+            this.cmdPermitirEdicion.FlatAppearance.BorderSize = 0;
+            this.cmdPermitirEdicion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdPermitirEdicion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdPermitirEdicion.ForeColor = System.Drawing.Color.White;
+            this.cmdPermitirEdicion.Location = new System.Drawing.Point(185, 558);
             this.cmdPermitirEdicion.Name = "cmdPermitirEdicion";
-            this.cmdPermitirEdicion.Size = new System.Drawing.Size(193, 38);
+            this.cmdPermitirEdicion.Size = new System.Drawing.Size(148, 40);
             this.cmdPermitirEdicion.TabIndex = 90;
             this.cmdPermitirEdicion.Text = "Editar";
             this.cmdPermitirEdicion.UseVisualStyleBackColor = false;
             this.cmdPermitirEdicion.Visible = false;
             this.cmdPermitirEdicion.Click += new System.EventHandler(this.cmdPermitirEdicion_Click);
-            // 
+            //
+            // cmdEditar
+            //
+            this.cmdEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
+            this.cmdEditar.Enabled = false;
+            this.cmdEditar.FlatAppearance.BorderSize = 0;
+            this.cmdEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdEditar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdEditar.ForeColor = System.Drawing.Color.White;
+            this.cmdEditar.Location = new System.Drawing.Point(185, 508);
+            this.cmdEditar.Name = "cmdEditar";
+            this.cmdEditar.Size = new System.Drawing.Size(148, 40);
+            this.cmdEditar.TabIndex = 85;
+            this.cmdEditar.Text = "Guardar Cambios";
+            this.cmdEditar.UseVisualStyleBackColor = false;
+            this.cmdEditar.Visible = false;
+            this.cmdEditar.Click += new System.EventHandler(this.cmdEditar_Click);
+            //
+            // panelRight
+            //
+            this.panelRight.BackColor = System.Drawing.Color.White;
+            this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRight.Controls.Add(this.dataGridView1);
+            this.panelRight.Location = new System.Drawing.Point(548, 103);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(825, 645);
+            this.panelRight.TabIndex = 203;
+            //
+            // dataGridView1
+            //
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeight = 45;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(234)))), ((int)(((byte)(254)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(95)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 38;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(823, 643);
+            this.dataGridView1.TabIndex = 70;
+            //
             // Categorias
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1387, 787);
-            this.Controls.Add(this.cmdPermitirEdicion);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.cmdEditar);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtIdCategoria);
-            this.Controls.Add(this.cmdBuscar);
-            this.Controls.Add(this.cmdEliminar);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.cmdCancelar);
-            this.Controls.Add(this.cmdGuardar);
-            this.Controls.Add(this.cmdNuevo);
-            this.Controls.Add(this.dataGridView1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.ClientSize = new System.Drawing.Size(1387, 760);
+            this.Controls.Add(this.panelRight);
+            this.Controls.Add(this.panelLeft);
+            this.Controls.Add(this.panelAccent);
+            this.Controls.Add(this.panelHeader);
             this.Name = "Categorias";
             this.Text = "Categorias";
             this.Load += new System.EventHandler(this.Categorias_Load);
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
+            this.panelLeft.PerformLayout();
+            this.panelRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblSubtitulo;
+        private System.Windows.Forms.Panel panelAccent;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.RichTextBox txtDescripcion;
         private System.Windows.Forms.Button cmdEditar;
         private System.Windows.Forms.Label label6;
