@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\darkn\\\\OneDrive\\\\Escritorio\\\\Universidad\\\\PracticasRaquel\\\\SistemaPolleria\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\darkn\\\\OneDrive\\\\Escritorio\\\\Universidad\\\\PracticasRaquel\\\\SistemaPolleria\\\\CapaPresentacion\" -File -Recurse | Where-Object { $_.Extension -in @\\('.cs', '.aspx', '.html', '.htm', '.css', '.js', '.config'\\) } | Select-Object -ExpandProperty FullName | Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\darkn\\\\OneDrive\\\\Escritorio\\\\Universidad\\\\PracticasRaquel\\\\SistemaPolleria\" -File | Where-Object { $_.Extension -in @\\('.sln', '.md'\\) } | Select-Object -ExpandProperty FullName)"
+    ]
+  }
+}
