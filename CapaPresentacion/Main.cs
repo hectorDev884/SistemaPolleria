@@ -71,5 +71,11 @@ namespace CapaPresentacion
             Bitacora bitacora = new Bitacora();
             bitacora.ShowDialog();
         }
+
+        private void cmdUtileria_Click(object sender, EventArgs e)
+        {
+            Utileria utileria = new Utileria();
+            utileria.ShowDialog();
+        }
     }
 }

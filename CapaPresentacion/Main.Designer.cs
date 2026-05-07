@@ -44,6 +44,9 @@
             this.sep2 = new System.Windows.Forms.Panel();
             this.cmdConsultas = new System.Windows.Forms.Button();
             this.cmdBitacora = new System.Windows.Forms.Button();
+            this.sep3 = new System.Windows.Forms.Panel();
+            this.lblUtileria = new System.Windows.Forms.Label();
+            this.cmdUtileria = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCatalogos
@@ -241,13 +244,49 @@
             this.cmdBitacora.Text = "Bitacora Errores";
             this.cmdBitacora.UseVisualStyleBackColor = false;
             this.cmdBitacora.Click += new System.EventHandler(this.cmdBitacora_Click);
-            // 
+            //
+            // sep3
+            //
+            this.sep3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(218)))), ((int)(((byte)(210)))));
+            this.sep3.Location = new System.Drawing.Point(28, 380);
+            this.sep3.Name = "sep3";
+            this.sep3.Size = new System.Drawing.Size(664, 1);
+            this.sep3.TabIndex = 11;
+            //
+            // lblUtileria
+            //
+            this.lblUtileria.AutoSize = true;
+            this.lblUtileria.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
+            this.lblUtileria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(148)))), ((int)(((byte)(140)))));
+            this.lblUtileria.Location = new System.Drawing.Point(28, 394);
+            this.lblUtileria.Name = "lblUtileria";
+            this.lblUtileria.Size = new System.Drawing.Size(71, 17);
+            this.lblUtileria.TabIndex = 12;
+            this.lblUtileria.Text = "UTILERÍA";
+            //
+            // cmdUtileria
+            //
+            this.cmdUtileria.BackColor = System.Drawing.Color.White;
+            this.cmdUtileria.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(202)))), ((int)(((byte)(165)))));
+            this.cmdUtileria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdUtileria.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmdUtileria.Location = new System.Drawing.Point(28, 416);
+            this.cmdUtileria.Name = "cmdUtileria";
+            this.cmdUtileria.Size = new System.Drawing.Size(200, 52);
+            this.cmdUtileria.TabIndex = 13;
+            this.cmdUtileria.Text = "Utilería";
+            this.cmdUtileria.UseVisualStyleBackColor = false;
+            this.cmdUtileria.Click += new System.EventHandler(this.cmdUtileria_Click);
+            //
             // Main
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(720, 460);
+            this.ClientSize = new System.Drawing.Size(720, 490);
+            this.Controls.Add(this.cmdUtileria);
+            this.Controls.Add(this.lblUtileria);
+            this.Controls.Add(this.sep3);
             this.Controls.Add(this.cmdBitacora);
             this.Controls.Add(this.cmdConsultas);
             this.Controls.Add(this.panelTop);
@@ -294,6 +333,9 @@
         private System.Windows.Forms.Panel sep2;
         private System.Windows.Forms.Button cmdConsultas;
         private System.Windows.Forms.Button cmdBitacora;
+        private System.Windows.Forms.Panel sep3;
+        private System.Windows.Forms.Label lblUtileria;
+        private System.Windows.Forms.Button cmdUtileria;
     }
 }
 

@@ -80,6 +80,12 @@
     <Compile Include="Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utileria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utileria.Designer.cs">
+      <DependentUpon>Utileria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </Compile>
     <EmbeddedResource Include="Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utileria.resx">
+      <DependentUpon>Utileria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
