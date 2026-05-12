@@ -1,341 +1,237 @@
-﻿namespace CapaPresentacion
+namespace CapaPresentacion
 {
     partial class Main
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.lblCatalogos = new System.Windows.Forms.Label();
-            this.cmdCategorias = new System.Windows.Forms.Button();
-            this.cmdProductos = new System.Windows.Forms.Button();
-            this.cmdClientes = new System.Windows.Forms.Button();
-            this.cmdProveedores = new System.Windows.Forms.Button();
-            this.lblOperaciones = new System.Windows.Forms.Label();
-            this.cmdVentas = new System.Windows.Forms.Button();
-            this.cmdCompras = new System.Windows.Forms.Button();
-            this.cmdLavarPollo = new System.Windows.Forms.Button();
-            this.lblAnalisis = new System.Windows.Forms.Label();
-            this.cmdReportes = new System.Windows.Forms.Button();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.sep1 = new System.Windows.Forms.Panel();
-            this.sep2 = new System.Windows.Forms.Panel();
-            this.cmdConsultas = new System.Windows.Forms.Button();
-            this.cmdBitacora = new System.Windows.Forms.Button();
-            this.sep3 = new System.Windows.Forms.Panel();
-            this.lblUtileria = new System.Windows.Forms.Label();
-            this.cmdUtileria = new System.Windows.Forms.Button();
+            this.menuStrip1         = new System.Windows.Forms.MenuStrip();
+            this.mnuCatalogos       = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCategorias      = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuProductos       = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuClientes        = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuProveedores     = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMovimientos     = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuVentas          = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCompras         = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuLavarPollo      = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAnalisis        = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuReportes        = new System.Windows.Forms.ToolStripMenuItem();
+            this.sepA1              = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuConsultasVentas    = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuConsultasCompras   = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuConsultasLavado    = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuConsultaClientes   = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuConsultaProveedores = new System.Windows.Forms.ToolStripMenuItem();
+            this.sepA2              = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuBitacora        = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuUtileria        = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuUtileriaItem    = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelAccent        = new System.Windows.Forms.Panel();
+            this.lblTitulo          = new System.Windows.Forms.Label();
+            this.lblAyuda           = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblCatalogos
-            // 
-            this.lblCatalogos.AutoSize = true;
-            this.lblCatalogos.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-            this.lblCatalogos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(148)))), ((int)(((byte)(140)))));
-            this.lblCatalogos.Location = new System.Drawing.Point(28, 24);
-            this.lblCatalogos.Name = "lblCatalogos";
-            this.lblCatalogos.Size = new System.Drawing.Size(83, 17);
-            this.lblCatalogos.TabIndex = 1;
-            this.lblCatalogos.Text = "CATÁLOGOS";
-            // 
-            // cmdCategorias
-            // 
-            this.cmdCategorias.BackColor = System.Drawing.Color.White;
-            this.cmdCategorias.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(202)))), ((int)(((byte)(165)))));
-            this.cmdCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdCategorias.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdCategorias.Location = new System.Drawing.Point(28, 46);
-            this.cmdCategorias.Name = "cmdCategorias";
-            this.cmdCategorias.Size = new System.Drawing.Size(148, 72);
-            this.cmdCategorias.TabIndex = 0;
-            this.cmdCategorias.Text = "Categorías";
-            this.cmdCategorias.UseVisualStyleBackColor = false;
-            this.cmdCategorias.Click += new System.EventHandler(this.cmdCategorias_Click);
-            // 
-            // cmdProductos
-            // 
-            this.cmdProductos.BackColor = System.Drawing.Color.White;
-            this.cmdProductos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(202)))), ((int)(((byte)(165)))));
-            this.cmdProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdProductos.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdProductos.Location = new System.Drawing.Point(188, 46);
-            this.cmdProductos.Name = "cmdProductos";
-            this.cmdProductos.Size = new System.Drawing.Size(148, 72);
-            this.cmdProductos.TabIndex = 1;
-            this.cmdProductos.Text = "Productos";
-            this.cmdProductos.UseVisualStyleBackColor = false;
-            this.cmdProductos.Click += new System.EventHandler(this.cmdProductos_Click);
-            // 
-            // cmdClientes
-            // 
-            this.cmdClientes.BackColor = System.Drawing.Color.White;
-            this.cmdClientes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(138)))), ((int)(((byte)(221)))));
-            this.cmdClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdClientes.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdClientes.Location = new System.Drawing.Point(348, 46);
-            this.cmdClientes.Name = "cmdClientes";
-            this.cmdClientes.Size = new System.Drawing.Size(148, 72);
-            this.cmdClientes.TabIndex = 2;
-            this.cmdClientes.Text = "Clientes";
-            this.cmdClientes.UseVisualStyleBackColor = false;
-            this.cmdClientes.Click += new System.EventHandler(this.cmdClientes_Click);
-            // 
-            // cmdProveedores
-            // 
-            this.cmdProveedores.BackColor = System.Drawing.Color.White;
-            this.cmdProveedores.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(119)))), ((int)(((byte)(221)))));
-            this.cmdProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdProveedores.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdProveedores.Location = new System.Drawing.Point(508, 46);
-            this.cmdProveedores.Name = "cmdProveedores";
-            this.cmdProveedores.Size = new System.Drawing.Size(184, 72);
-            this.cmdProveedores.TabIndex = 3;
-            this.cmdProveedores.Text = "Proveedores";
-            this.cmdProveedores.UseVisualStyleBackColor = false;
-            this.cmdProveedores.Click += new System.EventHandler(this.cmdProveedores_Click);
-            // 
-            // lblOperaciones
-            // 
-            this.lblOperaciones.AutoSize = true;
-            this.lblOperaciones.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-            this.lblOperaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(148)))), ((int)(((byte)(140)))));
-            this.lblOperaciones.Location = new System.Drawing.Point(28, 148);
-            this.lblOperaciones.Name = "lblOperaciones";
-            this.lblOperaciones.Size = new System.Drawing.Size(96, 17);
-            this.lblOperaciones.TabIndex = 5;
-            this.lblOperaciones.Text = "OPERACIONES";
-            // 
-            // cmdVentas
-            // 
-            this.cmdVentas.BackColor = System.Drawing.Color.White;
-            this.cmdVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(159)))), ((int)(((byte)(39)))));
-            this.cmdVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdVentas.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdVentas.Location = new System.Drawing.Point(28, 170);
-            this.cmdVentas.Name = "cmdVentas";
-            this.cmdVentas.Size = new System.Drawing.Size(200, 72);
-            this.cmdVentas.TabIndex = 4;
-            this.cmdVentas.Text = "Ventas";
-            this.cmdVentas.UseVisualStyleBackColor = false;
-            this.cmdVentas.Click += new System.EventHandler(this.cmdVentas_Click);
-            // 
-            // cmdCompras
-            // 
-            this.cmdCompras.BackColor = System.Drawing.Color.White;
-            this.cmdCompras.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(90)))), ((int)(((byte)(48)))));
-            this.cmdCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdCompras.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdCompras.Location = new System.Drawing.Point(240, 170);
-            this.cmdCompras.Name = "cmdCompras";
-            this.cmdCompras.Size = new System.Drawing.Size(200, 72);
-            this.cmdCompras.TabIndex = 5;
-            this.cmdCompras.Text = "Compras";
-            this.cmdCompras.UseVisualStyleBackColor = false;
-            this.cmdCompras.Click += new System.EventHandler(this.cmdCompras_Click);
-            // 
-            // cmdLavarPollo
-            // 
-            this.cmdLavarPollo.BackColor = System.Drawing.Color.White;
-            this.cmdLavarPollo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(83)))), ((int)(((byte)(126)))));
-            this.cmdLavarPollo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdLavarPollo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdLavarPollo.Location = new System.Drawing.Point(452, 170);
-            this.cmdLavarPollo.Name = "cmdLavarPollo";
-            this.cmdLavarPollo.Size = new System.Drawing.Size(240, 72);
-            this.cmdLavarPollo.TabIndex = 6;
-            this.cmdLavarPollo.Text = "Lavar Pollo";
-            this.cmdLavarPollo.UseVisualStyleBackColor = false;
-            this.cmdLavarPollo.Click += new System.EventHandler(this.cmdLavarPollo_Click);
-            // 
-            // lblAnalisis
-            // 
-            this.lblAnalisis.AutoSize = true;
-            this.lblAnalisis.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-            this.lblAnalisis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(148)))), ((int)(((byte)(140)))));
-            this.lblAnalisis.Location = new System.Drawing.Point(28, 272);
-            this.lblAnalisis.Name = "lblAnalisis";
-            this.lblAnalisis.Size = new System.Drawing.Size(65, 17);
-            this.lblAnalisis.TabIndex = 8;
-            this.lblAnalisis.Text = "ANÁLISIS";
-            // 
-            // cmdReportes
-            // 
-            this.cmdReportes.BackColor = System.Drawing.Color.White;
-            this.cmdReportes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(135)))), ((int)(((byte)(128)))));
-            this.cmdReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdReportes.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdReportes.Location = new System.Drawing.Point(240, 290);
-            this.cmdReportes.Name = "cmdReportes";
-            this.cmdReportes.Size = new System.Drawing.Size(200, 64);
-            this.cmdReportes.TabIndex = 7;
-            this.cmdReportes.Text = "Reportes";
-            this.cmdReportes.UseVisualStyleBackColor = false;
-            this.cmdReportes.Click += new System.EventHandler(this.cmdReportes_Click);
-            // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(202)))), ((int)(((byte)(165)))));
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(720, 5);
-            this.panelTop.TabIndex = 0;
-            // 
-            // sep1
-            // 
-            this.sep1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(218)))), ((int)(((byte)(210)))));
-            this.sep1.Location = new System.Drawing.Point(28, 134);
-            this.sep1.Name = "sep1";
-            this.sep1.Size = new System.Drawing.Size(664, 1);
-            this.sep1.TabIndex = 4;
-            // 
-            // sep2
-            // 
-            this.sep2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(218)))), ((int)(((byte)(210)))));
-            this.sep2.Location = new System.Drawing.Point(28, 258);
-            this.sep2.Name = "sep2";
-            this.sep2.Size = new System.Drawing.Size(664, 1);
-            this.sep2.TabIndex = 7;
-            // 
-            // cmdConsultas
-            // 
-            this.cmdConsultas.BackColor = System.Drawing.Color.White;
-            this.cmdConsultas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(135)))), ((int)(((byte)(128)))));
-            this.cmdConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdConsultas.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdConsultas.Location = new System.Drawing.Point(52, 290);
-            this.cmdConsultas.Name = "cmdConsultas";
-            this.cmdConsultas.Size = new System.Drawing.Size(176, 64);
-            this.cmdConsultas.TabIndex = 9;
-            this.cmdConsultas.Text = "Consultas";
-            this.cmdConsultas.UseVisualStyleBackColor = false;
-            // 
-            // cmdBitacora
-            // 
-            this.cmdBitacora.BackColor = System.Drawing.Color.White;
-            this.cmdBitacora.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(135)))), ((int)(((byte)(128)))));
-            this.cmdBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdBitacora.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdBitacora.Location = new System.Drawing.Point(452, 290);
-            this.cmdBitacora.Name = "cmdBitacora";
-            this.cmdBitacora.Size = new System.Drawing.Size(240, 64);
-            this.cmdBitacora.TabIndex = 10;
-            this.cmdBitacora.Text = "Bitacora Errores";
-            this.cmdBitacora.UseVisualStyleBackColor = false;
-            this.cmdBitacora.Click += new System.EventHandler(this.cmdBitacora_Click);
-            //
-            // sep3
-            //
-            this.sep3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(218)))), ((int)(((byte)(210)))));
-            this.sep3.Location = new System.Drawing.Point(28, 380);
-            this.sep3.Name = "sep3";
-            this.sep3.Size = new System.Drawing.Size(664, 1);
-            this.sep3.TabIndex = 11;
-            //
-            // lblUtileria
-            //
-            this.lblUtileria.AutoSize = true;
-            this.lblUtileria.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-            this.lblUtileria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(148)))), ((int)(((byte)(140)))));
-            this.lblUtileria.Location = new System.Drawing.Point(28, 394);
-            this.lblUtileria.Name = "lblUtileria";
-            this.lblUtileria.Size = new System.Drawing.Size(71, 17);
-            this.lblUtileria.TabIndex = 12;
-            this.lblUtileria.Text = "UTILERÍA";
-            //
-            // cmdUtileria
-            //
-            this.cmdUtileria.BackColor = System.Drawing.Color.White;
-            this.cmdUtileria.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(202)))), ((int)(((byte)(165)))));
-            this.cmdUtileria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdUtileria.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmdUtileria.Location = new System.Drawing.Point(28, 416);
-            this.cmdUtileria.Name = "cmdUtileria";
-            this.cmdUtileria.Size = new System.Drawing.Size(200, 52);
-            this.cmdUtileria.TabIndex = 13;
-            this.cmdUtileria.Text = "Utilería";
-            this.cmdUtileria.UseVisualStyleBackColor = false;
-            this.cmdUtileria.Click += new System.EventHandler(this.cmdUtileria_Click);
-            //
-            // Main
-            //
+
+            // ── menuStrip1 ──────────────────────────────────────────
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                this.mnuCatalogos, this.mnuMovimientos, this.mnuAnalisis, this.mnuUtileria
+            });
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(480, 28);
+            this.menuStrip1.TabIndex = 0;
+
+            // ── Catálogos ───────────────────────────────────────────
+            this.mnuCatalogos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                this.mnuCategorias, this.mnuProductos, this.mnuClientes, this.mnuProveedores
+            });
+            this.mnuCatalogos.Name = "mnuCatalogos";
+            this.mnuCatalogos.Text = "Catálogos";
+
+            this.mnuCategorias.Name = "mnuCategorias";
+            this.mnuCategorias.Text = "Categorías";
+            this.mnuCategorias.Click += new System.EventHandler(this.mnuCategorias_Click);
+
+            this.mnuProductos.Name = "mnuProductos";
+            this.mnuProductos.Text = "Productos";
+            this.mnuProductos.Click += new System.EventHandler(this.mnuProductos_Click);
+
+            this.mnuClientes.Name = "mnuClientes";
+            this.mnuClientes.Text = "Clientes";
+            this.mnuClientes.Click += new System.EventHandler(this.mnuClientes_Click);
+
+            this.mnuProveedores.Name = "mnuProveedores";
+            this.mnuProveedores.Text = "Proveedores";
+            this.mnuProveedores.Click += new System.EventHandler(this.mnuProveedores_Click);
+
+            // ── Movimientos ─────────────────────────────────────────
+            this.mnuMovimientos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                this.mnuVentas, this.mnuCompras, this.mnuLavarPollo
+            });
+            this.mnuMovimientos.Name = "mnuMovimientos";
+            this.mnuMovimientos.Text = "Movimientos";
+
+            this.mnuVentas.Name = "mnuVentas";
+            this.mnuVentas.Text = "Ventas";
+            this.mnuVentas.Click += new System.EventHandler(this.mnuVentas_Click);
+
+            this.mnuCompras.Name = "mnuCompras";
+            this.mnuCompras.Text = "Compras";
+            this.mnuCompras.Click += new System.EventHandler(this.mnuCompras_Click);
+
+            this.mnuLavarPollo.Name = "mnuLavarPollo";
+            this.mnuLavarPollo.Text = "Lavar Pollo";
+            this.mnuLavarPollo.Click += new System.EventHandler(this.mnuLavarPollo_Click);
+
+            // ── Reportes y Consultas ────────────────────────────────
+            this.mnuAnalisis.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                this.mnuReportes,
+                this.sepA1,
+                this.mnuConsultasVentas,
+                this.mnuConsultasCompras,
+                this.mnuConsultasLavado,
+                this.mnuConsultaClientes,
+                this.mnuConsultaProveedores,
+                this.sepA2,
+                this.mnuBitacora
+            });
+            this.mnuAnalisis.Name = "mnuAnalisis";
+            this.mnuAnalisis.Text = "Reportes y Consultas";
+
+            this.mnuReportes.Name = "mnuReportes";
+            this.mnuReportes.Text = "Reportes";
+            this.mnuReportes.Click += new System.EventHandler(this.mnuReportes_Click);
+
+            this.sepA1.Name = "sepA1";
+
+            this.mnuConsultasVentas.Name = "mnuConsultasVentas";
+            this.mnuConsultasVentas.Text = "Consultas de Ventas";
+            this.mnuConsultasVentas.Click += new System.EventHandler(this.mnuConsultasVentas_Click);
+
+            this.mnuConsultasCompras.Name = "mnuConsultasCompras";
+            this.mnuConsultasCompras.Text = "Consultas de Compras";
+            this.mnuConsultasCompras.Click += new System.EventHandler(this.mnuConsultasCompras_Click);
+
+            this.mnuConsultasLavado.Name = "mnuConsultasLavado";
+            this.mnuConsultasLavado.Text = "Consultas de Lavado";
+            this.mnuConsultasLavado.Click += new System.EventHandler(this.mnuConsultasLavado_Click);
+
+            this.mnuConsultaClientes.Name = "mnuConsultaClientes";
+            this.mnuConsultaClientes.Text = "Consultas de Clientes";
+            this.mnuConsultaClientes.Click += new System.EventHandler(this.mnuConsultaClientes_Click);
+
+            this.mnuConsultaProveedores.Name = "mnuConsultaProveedores";
+            this.mnuConsultaProveedores.Text = "Consultas de Proveedores";
+            this.mnuConsultaProveedores.Click += new System.EventHandler(this.mnuConsultaProveedores_Click);
+
+            this.sepA2.Name = "sepA2";
+
+            this.mnuBitacora.Name = "mnuBitacora";
+            this.mnuBitacora.Text = "Bitácora de Errores";
+            this.mnuBitacora.Click += new System.EventHandler(this.mnuBitacora_Click);
+
+            // ── Utilería ────────────────────────────────────────────
+            this.mnuUtileria.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                this.mnuUtileriaItem
+            });
+            this.mnuUtileria.Name = "mnuUtileria";
+            this.mnuUtileria.Text = "Utilería";
+
+            this.mnuUtileriaItem.Name = "mnuUtileriaItem";
+            this.mnuUtileriaItem.Text = "Respaldo y Restauración";
+            this.mnuUtileriaItem.Click += new System.EventHandler(this.mnuUtileriaItem_Click);
+
+            // ── panelAccent ─────────────────────────────────────────
+            this.panelAccent.BackColor = System.Drawing.Color.FromArgb(93, 202, 165);
+            this.panelAccent.Location = new System.Drawing.Point(0, 28);
+            this.panelAccent.Name = "panelAccent";
+            this.panelAccent.Size = new System.Drawing.Size(480, 4);
+            this.panelAccent.TabIndex = 1;
+
+            // ── lblTitulo ───────────────────────────────────────────
+            this.lblTitulo.AutoSize = false;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(40, 40, 45);
+            this.lblTitulo.Location = new System.Drawing.Point(0, 80);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(480, 64);
+            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "Sistema Pollería";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+            // ── lblAyuda ────────────────────────────────────────────
+            this.lblAyuda.AutoSize = false;
+            this.lblAyuda.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblAyuda.ForeColor = System.Drawing.Color.FromArgb(150, 148, 140);
+            this.lblAyuda.Location = new System.Drawing.Point(0, 152);
+            this.lblAyuda.Name = "lblAyuda";
+            this.lblAyuda.Size = new System.Drawing.Size(480, 30);
+            this.lblAyuda.TabIndex = 3;
+            this.lblAyuda.Text = "Seleccione una opción del menú para continuar";
+            this.lblAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+            // ── Main ────────────────────────────────────────────────
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(720, 490);
-            this.Controls.Add(this.cmdUtileria);
-            this.Controls.Add(this.lblUtileria);
-            this.Controls.Add(this.sep3);
-            this.Controls.Add(this.cmdBitacora);
-            this.Controls.Add(this.cmdConsultas);
-            this.Controls.Add(this.panelTop);
-            this.Controls.Add(this.lblCatalogos);
-            this.Controls.Add(this.cmdCategorias);
-            this.Controls.Add(this.cmdProductos);
-            this.Controls.Add(this.cmdClientes);
-            this.Controls.Add(this.cmdProveedores);
-            this.Controls.Add(this.sep1);
-            this.Controls.Add(this.lblOperaciones);
-            this.Controls.Add(this.cmdVentas);
-            this.Controls.Add(this.cmdCompras);
-            this.Controls.Add(this.cmdLavarPollo);
-            this.Controls.Add(this.sep2);
-            this.Controls.Add(this.lblAnalisis);
-            this.Controls.Add(this.cmdReportes);
+            this.BackColor = System.Drawing.Color.FromArgb(245, 245, 243);
+            this.ClientSize = new System.Drawing.Size(480, 260);
+            this.Controls.Add(this.lblAyuda);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.panelAccent);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema de Gestión — Menú Principal";
+            this.Text = "Sistema de Gestión — Pollería";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
-        // ── Declaraciones de controles ──────────────────
-        private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Label lblCatalogos;
-        private System.Windows.Forms.Button cmdCategorias;
-        private System.Windows.Forms.Button cmdProductos;
-        private System.Windows.Forms.Button cmdClientes;
-        private System.Windows.Forms.Button cmdProveedores;
-        private System.Windows.Forms.Label lblOperaciones;
-        private System.Windows.Forms.Button cmdVentas;
-        private System.Windows.Forms.Button cmdCompras;
-        private System.Windows.Forms.Button cmdLavarPollo;
-        private System.Windows.Forms.Label lblAnalisis;
-        private System.Windows.Forms.Button cmdReportes;
-        private System.Windows.Forms.Panel sep1;
-        private System.Windows.Forms.Panel sep2;
-        private System.Windows.Forms.Button cmdConsultas;
-        private System.Windows.Forms.Button cmdBitacora;
-        private System.Windows.Forms.Panel sep3;
-        private System.Windows.Forms.Label lblUtileria;
-        private System.Windows.Forms.Button cmdUtileria;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mnuCatalogos;
+        private System.Windows.Forms.ToolStripMenuItem mnuCategorias;
+        private System.Windows.Forms.ToolStripMenuItem mnuProductos;
+        private System.Windows.Forms.ToolStripMenuItem mnuClientes;
+        private System.Windows.Forms.ToolStripMenuItem mnuProveedores;
+        private System.Windows.Forms.ToolStripMenuItem mnuMovimientos;
+        private System.Windows.Forms.ToolStripMenuItem mnuVentas;
+        private System.Windows.Forms.ToolStripMenuItem mnuCompras;
+        private System.Windows.Forms.ToolStripMenuItem mnuLavarPollo;
+        private System.Windows.Forms.ToolStripMenuItem mnuAnalisis;
+        private System.Windows.Forms.ToolStripMenuItem mnuReportes;
+        private System.Windows.Forms.ToolStripSeparator sepA1;
+        private System.Windows.Forms.ToolStripMenuItem mnuConsultasVentas;
+        private System.Windows.Forms.ToolStripMenuItem mnuConsultasCompras;
+        private System.Windows.Forms.ToolStripMenuItem mnuConsultasLavado;
+        private System.Windows.Forms.ToolStripMenuItem mnuConsultaClientes;
+        private System.Windows.Forms.ToolStripMenuItem mnuConsultaProveedores;
+        private System.Windows.Forms.ToolStripSeparator sepA2;
+        private System.Windows.Forms.ToolStripMenuItem mnuBitacora;
+        private System.Windows.Forms.ToolStripMenuItem mnuUtileria;
+        private System.Windows.Forms.ToolStripMenuItem mnuUtileriaItem;
+        private System.Windows.Forms.Panel panelAccent;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblAyuda;
     }
 }
-

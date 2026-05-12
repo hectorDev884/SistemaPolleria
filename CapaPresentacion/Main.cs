@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
 
 namespace CapaPresentacion
@@ -17,65 +10,83 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void cmdProveedores_Click(object sender, EventArgs e)
+        // ── Catálogos ─────────────────────────────────────────────
+        private void mnuCategorias_Click(object sender, EventArgs e)
         {
-            Proveedores frm = new Proveedores();
-            frm.ShowDialog();
+            new Categorias().ShowDialog();
         }
 
-        private void cmdClientes_Click(object sender, EventArgs e)
+        private void mnuProductos_Click(object sender, EventArgs e)
         {
-            Clientes frm = new Clientes();
-            frm.ShowDialog();
+            new Productos().ShowDialog();
         }
 
-        private void cmdProductos_Click(object sender, EventArgs e)
+        private void mnuClientes_Click(object sender, EventArgs e)
         {
-            Productos frm = new Productos();
-            frm.ShowDialog();
+            new Clientes().ShowDialog();
         }
 
-        private void cmdCategorias_Click(object sender, EventArgs e)
+        private void mnuProveedores_Click(object sender, EventArgs e)
         {
-            Categorias frm = new Categorias();
-            frm.ShowDialog();
+            new Proveedores().ShowDialog();
         }
 
-        private void cmdVentas_Click(object sender, EventArgs e)
+        // ── Movimientos ───────────────────────────────────────────
+        private void mnuVentas_Click(object sender, EventArgs e)
         {
-            Venta frm = new Venta();
-            frm.ShowDialog();
+            new Venta().ShowDialog();
         }
 
-        private void cmdCompras_Click(object sender, EventArgs e)
+        private void mnuCompras_Click(object sender, EventArgs e)
         {
-            Compra frm = new Compra();
-            frm.ShowDialog();
+            new Compra().ShowDialog();
         }
 
-        private void cmdLavarPollo_Click(object sender, EventArgs e)
+        private void mnuLavarPollo_Click(object sender, EventArgs e)
         {
-            LavarPollo lavarPollo = new LavarPollo();
-            lavarPollo.ShowDialog();
+            new LavarPollo().ShowDialog();
         }
 
-        private void cmdReportes_Click(object sender, EventArgs e)
+        // ── Reportes y Consultas ──────────────────────────────────
+        private void mnuReportes_Click(object sender, EventArgs e)
         {
-
-            Reportes reportes = new Reportes();
-            reportes.ShowDialog();
+            new Reportes().ShowDialog();
         }
 
-        private void cmdBitacora_Click(object sender, EventArgs e)
+        private void mnuConsultasVentas_Click(object sender, EventArgs e)
         {
-            Bitacora bitacora = new Bitacora();
-            bitacora.ShowDialog();
+            new ConsultasVentas().ShowDialog();
         }
 
-        private void cmdUtileria_Click(object sender, EventArgs e)
+        private void mnuConsultasCompras_Click(object sender, EventArgs e)
         {
-            Utileria utileria = new Utileria();
-            utileria.ShowDialog();
+            new ConsultasCompras().ShowDialog();
+        }
+
+        private void mnuConsultasLavado_Click(object sender, EventArgs e)
+        {
+            new ConsultasLavadoPollo().ShowDialog();
+        }
+
+        private void mnuConsultaClientes_Click(object sender, EventArgs e)
+        {
+            new ConsultaClientes().ShowDialog();
+        }
+
+        private void mnuConsultaProveedores_Click(object sender, EventArgs e)
+        {
+            new ConsultaProveedores().ShowDialog();
+        }
+
+        private void mnuBitacora_Click(object sender, EventArgs e)
+        {
+            new Bitacora().ShowDialog();
+        }
+
+        // ── Utilería ──────────────────────────────────────────────
+        private void mnuUtileriaItem_Click(object sender, EventArgs e)
+        {
+            new Utileria().ShowDialog();
         }
     }
 }

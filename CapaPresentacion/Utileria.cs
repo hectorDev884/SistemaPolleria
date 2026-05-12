@@ -102,7 +102,8 @@ namespace CapaPresentacion
                         cmd.Connection = con;
                         cmd.CommandTimeout = 300;
                         cmd.CommandText =
-                            $"ALTER DATABASE [{DatabaseName}] SET SINGLE_USER WITH ROLLBACK IMMEDIATE; " +
+                            $"IF EXISTS (SELECT name FROM sys.databases WHERE name = N'{DatabaseName}') " +
+                            $"    ALTER DATABASE [{DatabaseName}] SET SINGLE_USER WITH ROLLBACK IMMEDIATE; " +
                             $"RESTORE DATABASE [{DatabaseName}] FROM DISK = @ruta WITH REPLACE; " +
                             $"ALTER DATABASE [{DatabaseName}] SET MULTI_USER;";
                         cmd.Parameters.AddWithValue("@ruta", rutaTemporal);
