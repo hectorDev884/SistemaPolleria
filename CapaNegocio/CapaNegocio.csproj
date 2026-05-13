@@ -53,6 +53,7 @@
     <Compile Include="BitacoraCN.cs" />
     <Compile Include="CategoriaCN.cs" />
     <Compile Include="ClientesCN.cs" />
+    <Compile Include="HistoricoCN.cs" />
     <Compile Include="ProductoLavadoCN.cs" />
     <Compile Include="ProductosCN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

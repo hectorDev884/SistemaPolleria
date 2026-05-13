@@ -55,6 +55,7 @@
     <Compile Include="CategoriaCRUD.cs" />
     <Compile Include="ClientesCRUD.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="HistoricoCRUD.cs" />
     <Compile Include="ProductoLavadoCRUD.cs" />
     <Compile Include="ProductosCRUD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

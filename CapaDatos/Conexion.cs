@@ -17,5 +17,11 @@ namespace CapaDatos
             connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
             return connection;
         }
+
+        public SqlConnection ConectarHistorico()
+        {
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConexionHistorico"].ConnectionString);
+            return connection;
+        }
     }
 }

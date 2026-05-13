@@ -11,6 +11,7 @@ namespace CapaPresentacion
         private ProductosCN _productosCN = new ProductosCN();
         private ClientesCN _clientesCN = new ClientesCN();
         private CategoriasCN _categoriasCN = new CategoriasCN();
+        private HistoricoCN _historicoCN = new HistoricoCN();
 
         public Venta()
         {
@@ -307,6 +308,60 @@ namespace CapaPresentacion
         {
             ConsultasVentas consultasVentas = new ConsultasVentas();
             consultasVentas.ShowDialog();
+        }
+
+        private void cmdHistorico_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void cmdHistorico_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Form dialog = new Form()
+                {
+                    Width = 320,
+                    Height = 170,
+                    Text = "Paso a Historicos - Ventas",
+                    StartPosition = FormStartPosition.CenterParent,
+                    FormBorderStyle = FormBorderStyle.FixedDialog,
+                    MaximizeBox = false,
+                    MinimizeBox = false
+                };
+
+                Label lbl = new Label() { Left = 20, Top = 20, Text = "Anio a transferir:", Width = 120, Font = new System.Drawing.Font("Segoe UI", 10F) };
+                NumericUpDown nud = new NumericUpDown() { Left = 20, Top = 48, Width = 100, Minimum = 2000, Maximum = 2100, Value = DateTime.Now.Year, Font = new System.Drawing.Font("Segoe UI", 10F) };
+                Button btnOk = new Button() { Text = "Transferir", Left = 160, Top = 20, Width = 120, Height = 35, FlatStyle = FlatStyle.Flat, BackColor = System.Drawing.Color.FromArgb(5, 150, 105), ForeColor = System.Drawing.Color.White, Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
+                Button btnCancel = new Button() { Text = "Cancelar", Left = 160, Top = 65, Width = 120, Height = 35, FlatStyle = FlatStyle.Flat };
+
+                btnOk.Click += (s, ev) => { dialog.DialogResult = DialogResult.OK; dialog.Close(); };
+                btnCancel.Click += (s, ev) => { dialog.DialogResult = DialogResult.Cancel; dialog.Close(); };
+
+                dialog.Controls.Add(lbl);
+                dialog.Controls.Add(nud);
+                dialog.Controls.Add(btnOk);
+                dialog.Controls.Add(btnCancel);
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    int anio = (int)nud.Value;
+
+                    DialogResult confirm = MessageBox.Show(
+                        string.Format("Se transferiran Ventas, DetalleVentas y Pedidos del anio {0} a la base historica. Una vez transferidos se eliminaran del sistema actual. Confirma?", anio),
+                        "Confirmar transferencia",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Warning);
+
+                    if (confirm != DialogResult.Yes) return;
+
+                    _historicoCN.PasarVentasAHistorico(anio);
+                    MessageBox.Show("Ventas transferidas correctamente al historico.", "Transferencia completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al transferir ventas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

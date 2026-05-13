@@ -24,4 +24,8 @@ C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\C
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\obj\Debug\CapaNegocio.pdb
-C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\bin\Debug\CapaEntidad.dll.config
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\darkn\OneDrive\Escritorio\Universidad\PracticasRaquel\SistemaPolleria\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
