@@ -17,6 +17,7 @@ namespace CapaPresentacion
         private ProductosCN _productosCN = new ProductosCN();
         private DataTable tablaProductos;
         private CategoriasCN _categoriasCN = new CategoriasCN();
+        private HistoricoCN _historicoCN = new HistoricoCN();
 
         public Productos()
         {
@@ -316,6 +317,27 @@ namespace CapaPresentacion
             cboCategoria.Enabled = true;
             cboEstatus.Enabled = true;
             txtPrecio.Enabled = true;
+        }
+
+        private void cmdHistorico_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult confirm = MessageBox.Show(
+                    "Se transferiran todos los Productos a la base historica. Confirma?",
+                    "Confirmar transferencia",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (confirm != DialogResult.Yes) return;
+
+                _historicoCN.PasarProductosAHistorico();
+                MessageBox.Show("Productos transferidos correctamente al historico.", "Transferencia completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al transferir productos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

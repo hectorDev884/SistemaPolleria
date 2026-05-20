@@ -9,6 +9,7 @@ namespace CapaPresentacion
     public partial class Categorias : Form
     {
         private CategoriasCN _categoriasCN = new CategoriasCN();
+        private HistoricoCN _historicoCN = new HistoricoCN();
         private DataTable tablaCategorias;
 
         public Categorias()
@@ -224,6 +225,27 @@ namespace CapaPresentacion
 
             cmdPermitirEdicion.Enabled = false;
             cmdPermitirEdicion.Visible = false;
+        }
+
+        private void cmdHistorico_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult confirm = MessageBox.Show(
+                    "Se transferiran todas las Categorias a la base historica. Confirma?",
+                    "Confirmar transferencia",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (confirm != DialogResult.Yes) return;
+
+                _historicoCN.PasarCategoriasAHistorico();
+                MessageBox.Show("Categorias transferidas correctamente al historico.", "Transferencia completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al transferir categorias: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

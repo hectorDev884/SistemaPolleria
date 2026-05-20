@@ -29,7 +29,7 @@ namespace CapaPresentacion
 
                 // ── 454545 = Pollo Vivo ────────────────────────────────────
                 DataTable dtVivo =
-                    _productosCN.ObtenerProductoPorCodigo("454545")
+                    _productosCN.ObtenerProductoPorCodigo("22290696")
                     .Tables["GetProductoByCodigo"];
 
                 if (dtVivo == null || dtVivo.Rows.Count == 0)
@@ -53,7 +53,7 @@ namespace CapaPresentacion
 
                 // ── 123654789 = Pollo Lavado ───────────────────────────────
                 DataTable dtLavado =
-                    _productosCN.ObtenerProductoPorCodigo("123654789")
+                    _productosCN.ObtenerProductoPorCodigo("22290697")
                     .Tables["GetProductoByCodigo"];
 
                 if (dtLavado == null || dtLavado.Rows.Count == 0)

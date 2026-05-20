@@ -9,6 +9,7 @@ namespace CapaPresentacion
     public partial class Proveedores : Form
     {
         private ProveedoresCN _proveedoresCN = new ProveedoresCN();
+        private HistoricoCN _historicoCN = new HistoricoCN();
         private DataTable tablaProveedores;
 
         public Proveedores()
@@ -262,6 +263,27 @@ namespace CapaPresentacion
         {
             ConsultaProveedores consulta = new ConsultaProveedores();
             consulta.ShowDialog();
+        }
+
+        private void cmdHistorico_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult confirm = MessageBox.Show(
+                    "Se transferiran todos los Proveedores a la base historica. Confirma?",
+                    "Confirmar transferencia",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (confirm != DialogResult.Yes) return;
+
+                _historicoCN.PasarProveedoresAHistorico();
+                MessageBox.Show("Proveedores transferidos correctamente al historico.", "Transferencia completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al transferir proveedores: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -40,9 +40,9 @@ namespace CapaPresentacion
             this.panelGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            //
+            // 
             // panelHeader
-            //
+            // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.panelHeader.Controls.Add(this.lblSubtitulo);
             this.panelHeader.Controls.Add(this.label5);
@@ -50,39 +50,41 @@ namespace CapaPresentacion
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1369, 90);
             this.panelHeader.TabIndex = 200;
-            //
-            // label5
-            //
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(18, 10);
-            this.label5.Name = "label5";
-            this.label5.TabIndex = 99;
-            this.label5.Text = "Consultas de Compras";
-            //
+            // 
             // lblSubtitulo
-            //
+            // 
             this.lblSubtitulo.AutoSize = true;
             this.lblSubtitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
             this.lblSubtitulo.Location = new System.Drawing.Point(21, 63);
             this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.Size = new System.Drawing.Size(303, 21);
             this.lblSubtitulo.TabIndex = 1;
             this.lblSubtitulo.Text = "Consulta y filtrado de compras registradas";
-            //
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(18, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(406, 50);
+            this.label5.TabIndex = 99;
+            this.label5.Text = "Consultas de Compras";
+            // 
             // panelAccent
-            //
+            // 
             this.panelAccent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
             this.panelAccent.Location = new System.Drawing.Point(0, 90);
             this.panelAccent.Name = "panelAccent";
             this.panelAccent.Size = new System.Drawing.Size(1369, 5);
             this.panelAccent.TabIndex = 201;
-            //
+            // 
             // panelFiltros
-            //
+            // 
             this.panelFiltros.BackColor = System.Drawing.Color.White;
             this.panelFiltros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFiltros.Controls.Add(this.label1);
@@ -97,64 +99,67 @@ namespace CapaPresentacion
             this.panelFiltros.Name = "panelFiltros";
             this.panelFiltros.Size = new System.Drawing.Size(1349, 120);
             this.panelFiltros.TabIndex = 202;
-            //
+            // 
             // label1
-            //
+            // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.label1.Location = new System.Drawing.Point(20, 14);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 23);
             this.label1.TabIndex = 104;
             this.label1.Text = "Fecha inicio:";
-            //
+            // 
             // dtpInicio
-            //
+            // 
             this.dtpInicio.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpInicio.Location = new System.Drawing.Point(20, 43);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(220, 30);
             this.dtpInicio.TabIndex = 102;
-            //
+            // 
             // label2
-            //
+            // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.label2.Location = new System.Drawing.Point(260, 14);
             this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 23);
             this.label2.TabIndex = 105;
             this.label2.Text = "Fecha fin:";
-            //
+            // 
             // dtpFin
-            //
+            // 
             this.dtpFin.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFin.Location = new System.Drawing.Point(260, 43);
             this.dtpFin.Name = "dtpFin";
             this.dtpFin.Size = new System.Drawing.Size(220, 30);
             this.dtpFin.TabIndex = 103;
-            //
+            // 
             // label3
-            //
+            // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.label3.Location = new System.Drawing.Point(510, 14);
             this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 23);
             this.label3.TabIndex = 108;
             this.label3.Text = "Proveedor:";
-            //
+            // 
             // cboProveedores
-            //
+            // 
             this.cboProveedores.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboProveedores.FormattingEnabled = true;
             this.cboProveedores.Location = new System.Drawing.Point(510, 43);
             this.cboProveedores.Name = "cboProveedores";
             this.cboProveedores.Size = new System.Drawing.Size(220, 31);
             this.cboProveedores.TabIndex = 107;
-            //
+            // 
             // cmdPorFecha
-            //
+            // 
             this.cmdPorFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
             this.cmdPorFecha.FlatAppearance.BorderSize = 0;
             this.cmdPorFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -162,29 +167,29 @@ namespace CapaPresentacion
             this.cmdPorFecha.ForeColor = System.Drawing.Color.White;
             this.cmdPorFecha.Location = new System.Drawing.Point(770, 30);
             this.cmdPorFecha.Name = "cmdPorFecha";
-            this.cmdPorFecha.Size = new System.Drawing.Size(175, 55);
+            this.cmdPorFecha.Size = new System.Drawing.Size(220, 55);
             this.cmdPorFecha.TabIndex = 101;
             this.cmdPorFecha.Text = "Consultar por fecha";
             this.cmdPorFecha.UseVisualStyleBackColor = false;
             this.cmdPorFecha.Click += new System.EventHandler(this.cmdPorFecha_Click);
-            //
+            // 
             // cmdPorProveedor
-            //
+            // 
             this.cmdPorProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
             this.cmdPorProveedor.FlatAppearance.BorderSize = 0;
             this.cmdPorProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdPorProveedor.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdPorProveedor.ForeColor = System.Drawing.Color.White;
-            this.cmdPorProveedor.Location = new System.Drawing.Point(965, 30);
+            this.cmdPorProveedor.Location = new System.Drawing.Point(1017, 30);
             this.cmdPorProveedor.Name = "cmdPorProveedor";
-            this.cmdPorProveedor.Size = new System.Drawing.Size(175, 55);
+            this.cmdPorProveedor.Size = new System.Drawing.Size(270, 55);
             this.cmdPorProveedor.TabIndex = 106;
             this.cmdPorProveedor.Text = "Consultar por proveedor";
             this.cmdPorProveedor.UseVisualStyleBackColor = false;
             this.cmdPorProveedor.Click += new System.EventHandler(this.cmdPorProveedor_Click);
-            //
+            // 
             // panelGrid
-            //
+            // 
             this.panelGrid.BackColor = System.Drawing.Color.White;
             this.panelGrid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelGrid.Controls.Add(this.dataGridView1);
@@ -192,9 +197,9 @@ namespace CapaPresentacion
             this.panelGrid.Name = "panelGrid";
             this.panelGrid.Size = new System.Drawing.Size(1349, 519);
             this.panelGrid.TabIndex = 203;
-            //
+            // 
             // dataGridView1
-            //
+            // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
@@ -233,9 +238,9 @@ namespace CapaPresentacion
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1347, 517);
             this.dataGridView1.TabIndex = 100;
-            //
+            // 
             // ConsultasCompras
-            //
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
@@ -255,6 +260,7 @@ namespace CapaPresentacion
             this.panelGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -17,5 +17,25 @@ namespace CapaNegocio
         {
             _historicoCRUD.PasarLavadoPolloAHistorico(anio);
         }
+        public void PasarClientesAHistorico()
+        {
+            _historicoCRUD.PasarClientesAHistorico();
+        }
+        public void PasarCategoriasAHistorico()
+        {
+            _historicoCRUD.PasarCategoriasAHistorico();
+        }
+        public void PasarProductosAHistorico()
+        {
+            _historicoCRUD.PasarProductosAHistorico();
+        }
+        public void PasarProveedoresAHistorico()
+        {
+            _historicoCRUD.PasarProveedoresAHistorico();
+        }
+        public void PasarTodoAHistorico(int? anio)
+        {
+            _historicoCRUD.PasarTodoAHistorico(anio);
+        }
     }
 }

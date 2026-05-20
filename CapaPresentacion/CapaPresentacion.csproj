@@ -80,6 +80,12 @@
     <Compile Include="Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="TraspasoHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraspasoHistorico.Designer.cs">
+      <DependentUpon>TraspasoHistorico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utileria.cs">
       <SubType>Form</SubType>
     </Compile>

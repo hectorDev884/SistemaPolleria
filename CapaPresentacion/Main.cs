@@ -1,4 +1,6 @@
 using System;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace CapaPresentacion
@@ -87,6 +89,22 @@ namespace CapaPresentacion
         private void mnuUtileriaItem_Click(object sender, EventArgs e)
         {
             new Utileria().ShowDialog();
+        }
+
+        private void mnuTraspasoHistorico_Click(object sender, EventArgs e)
+        {
+            new TraspasoHistorico().ShowDialog();
+        }
+
+        private void mnuAyuda_Click(object sender, EventArgs e)
+        {
+            string ruta = Path.Combine(Application.StartupPath, "polleria.chm");
+            MessageBox.Show(ruta);
+            if (File.Exists(ruta))
+                Process.Start(ruta);
+            else
+                MessageBox.Show("No se encontró el archivo de ayuda.", "Ayuda",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

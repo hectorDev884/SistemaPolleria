@@ -45,6 +45,7 @@ namespace CapaPresentacion
             this.cmdEditar = new System.Windows.Forms.Button();
             this.panelRight = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmdHistorico = new System.Windows.Forms.Button();
             this.cmdConsultas = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -114,6 +115,7 @@ namespace CapaPresentacion
             this.panelLeft.Controls.Add(this.cmdEliminar);
             this.panelLeft.Controls.Add(this.cmdPermitirEdicion);
             this.panelLeft.Controls.Add(this.cmdEditar);
+            this.panelLeft.Controls.Add(this.cmdHistorico);
             this.panelLeft.Location = new System.Drawing.Point(10, 103);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(528, 645);
@@ -394,6 +396,21 @@ namespace CapaPresentacion
             this.dataGridView1.Size = new System.Drawing.Size(858, 643);
             this.dataGridView1.TabIndex = 28;
             //
+            // cmdHistorico
+            //
+            this.cmdHistorico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(148)))), ((int)(((byte)(136)))));
+            this.cmdHistorico.FlatAppearance.BorderSize = 0;
+            this.cmdHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdHistorico.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdHistorico.ForeColor = System.Drawing.Color.White;
+            this.cmdHistorico.Location = new System.Drawing.Point(365, 257);
+            this.cmdHistorico.Name = "cmdHistorico";
+            this.cmdHistorico.Size = new System.Drawing.Size(148, 40);
+            this.cmdHistorico.TabIndex = 95;
+            this.cmdHistorico.Text = "Historicos";
+            this.cmdHistorico.UseVisualStyleBackColor = false;
+            this.cmdHistorico.Click += new System.EventHandler(this.cmdHistorico_Click);
+            //
             // cmdConsultas
             //
             this.cmdConsultas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
@@ -461,5 +478,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Button cmdGuardar;
         private System.Windows.Forms.Button cmdPermitirEdicion;
         private System.Windows.Forms.Button cmdConsultas;
+        private System.Windows.Forms.Button cmdHistorico;
     }
 }

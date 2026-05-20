@@ -15,6 +15,7 @@ namespace CapaPresentacion
     public partial class Clientes : Form
     {
         private ClientesCN _clientesCN = new ClientesCN();
+        private HistoricoCN _historicoCN = new HistoricoCN();
         private DataTable tablaClientes;
         public Clientes()
         {
@@ -279,6 +280,27 @@ namespace CapaPresentacion
         {
             ConsultaClientes consultaClientes = new ConsultaClientes();
             consultaClientes.ShowDialog();
+        }
+
+        private void cmdHistorico_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult confirm = MessageBox.Show(
+                    "Se transferiran todos los Clientes a la base historica. Confirma?",
+                    "Confirmar transferencia",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (confirm != DialogResult.Yes) return;
+
+                _historicoCN.PasarClientesAHistorico();
+                MessageBox.Show("Clientes transferidos correctamente al historico.", "Transferencia completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al transferir clientes: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 
