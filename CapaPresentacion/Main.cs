@@ -99,7 +99,6 @@ namespace CapaPresentacion
         private void mnuAyuda_Click(object sender, EventArgs e)
         {
             string ruta = Path.Combine(Application.StartupPath, "polleria.chm");
-            MessageBox.Show(ruta);
             if (File.Exists(ruta))
                 Process.Start(ruta);
             else
